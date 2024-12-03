@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">GlowGuide</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#" id="cart">Cart (0)</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>GlowGuide</h1>
+        <p>- Discover Your Perfect Beauty Match Description:</p>
+        <button>Shop Now</button>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter">
+        <h2>Filter Products</h2>
+        <label for="priceFilter">Price Range:</label>
+        <select id="priceFilter">
+            <option value="all">All</option>
+            <option value="under200">Under ₹200</option>
+            <option value="200to300">₹200 - ₹300</option>
+            <option value="above300">Above ₹300</option>
+        </select>
+
+        <label for="ratingFilter">Minimum Rating:</label>
+        <select id="ratingFilter">
+            <option value="all">All</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+        </select>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list" id="productList">
+            <div class="product-card" data-price="200" data-rating="4">
+                <img src="https://www.maybelline.co.in/-/media/project/loreal/brand-sites/mny/apac/in/products/face/foundation/fitme-matte-and-poreless-foundation/modules/product-info/230-natural-buff/fmt-bottle_230.jpg?rev=881764efe2e84c01bee18f961dec3ec6&cx=0&cy=0&cw=315&ch=472&hash=953BA0BC0E8C536ECEDE2FD7981C4FB3" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>₹200</p>
+                <div class="stars">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="empty">☆</span>
+                </div>
+                <button class="AddCart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-price="150" data-rating="3">
+                <img src="https://m.media-amazon.com/images/I/51r0I+VTySL.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>₹399</p>
+                <div class="stars">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="empty">☆</span>
+                    <span class="empty">☆</span>
+                </div>
+                <button class="AddCart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-price="199" data-rating="3">
+                <img src="https://m.media-amazon.com/images/I/51BHwCx3TrL.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>₹199</p>
+                <div class="stars">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="empty">☆</span>
+                    <span class="empty">☆</span>
+                </div>
+                <button class="AddCart">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-price="299" data-rating="3">
+                <img src="C:\Users\brije\OneDrive\Desktop\9-9-to-5-complexion-care-cream-bronze-lakme-original-imaffsr9cvekbxfj.webp" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>₹299</p>
+                <div class="stars">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="empty">☆</span>
+                    <span class="empty">☆</span>
+                </div>
+                <button class="AddCart">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-list" id="productList">
+            <div class="product-card" data-price="200" data-rating="4">
+                <img src="C:\Users\brije\OneDrive\Desktop\images.jpeg">
+                <h3>Product 1</h3>
+                <p>₹149</p>
+                <div class="stars">
+                    <span class="filled">★</span>
+                    <span class="filled">☆</span>
+                    <span class="filled">☆</span>
+                    <span class="filled">☆</span>
+                    <span class="empty">☆</span>
+                </div>
+                <button class="AddCart">Add to Cart</button>
+            </div>
+            <div class="product-list" id="productList">
+                <div class="product-card" data-price="200" data-rating="4">
+                    <img src="C:\Users\brije\OneDrive\Desktop\images (1).jpeg">
+                    <h3>Product 1</h3>
+                    <p>₹249</p>
+                    <div class="stars">
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">☆</span>
+                        <span class="empty">☆</span>
+                    </div>
+                    <button class="AddCart">Add to Cart</button>
+                </div>
+                <div class="product-list" id="productList">
+                    <div class="product-card" data-price="200" data-rating="4">
+                        <img src="C:\Users\brije\OneDrive\Desktop\images (2).jpeg">
+                        <h3>Product 1</h3>
+                        <p>₹499</p>
+                        <div class="stars">
+                            <span class="filled">★</span>
+                            <span class="filled">★</span>
+                            <span class="filled">☆</span>
+                            <span class="filled">☆</span>
+                            <span class="empty">☆</span>
+                        </div>
+                        <button class="AddCart">Add to Cart</button>
+                    </div>
+                    <div class="product-list" id="productList">
+                        <div class="product-card" data-price="200" data-rating="4">
+                            <img src="C:\Users\brije\OneDrive\Desktop\images (3).jpeg">
+                            <h3>Product 1</h3>
+                            <p>₹299</p>
+                            <div class="stars">
+                                <span class="filled">★</span>
+                                <span class="filled">★</span>
+                                <span class="filled">★</span>
+                                <span class="filled">★</span>
+                                <span class="empty">★</span>
+                            </div>
+                            <button class="AddCart">Add to Cart</button>
+                        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 GlowGuide. All Rights Reserved.</p>
+    </footer>
+    <script src="./store.js"></script>
+</body>
+</html>
+
